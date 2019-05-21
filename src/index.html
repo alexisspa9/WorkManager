@@ -5,14 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WorkManager</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <div class="projects-list">
+            <div class="current-projects">
+                <h6>Current Projects</h6>
+                <ul>
+                    <li>Mpafitis Taxi</li>
+                    <li>Paros Pages App</li>
+                    <li>Xiotakis</li>
+                </ul>
+            </div>
+            <div class="future-projects">
+                <h6>Future Projects</h6>
+                <ul>
+                    <li>Delivery App</li>
+                    <li>Reservation System</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="project-panel">
+           <h3>Mpafitis Taxi</h3>
+           <div class="project-info">
+               <span id="complete">INCOMPLETE</span>
+               <span id="recurring">ONE TIME</span>
+               <span id="paid">0$</span>
+               <span id="total">350$</span>
+               <span id="start_date">10-05-2019</span>
+               <span id="due">30-05-2019</span>
+               <div class="progress">20%</div>
+           </div>
 
-    <h1>It works!</h1>
+           <div class="todos">
+            here goes the todos
+           </div>
+
+           <div class="notes">
+               notes...
+           </div>
+          
+        </div>
+    </div>
     
-
-        <script>
-            require('./renderer.js');
-        </script>
+    
+    
+    <script>
+        require('./renderer.js');
+    </script>
 </body>
 </html>
