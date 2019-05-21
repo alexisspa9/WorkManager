@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/alexisspa9/WorkManager#readme",
   "dependencies": {
-    "electron": "^5.0.1"
+    "electron": "^5.0.1",
+    "moment": "^2.24.0"
   },
   "devDependencies": {
     "jest": "^24.8.0"
