@@ -12,6 +12,7 @@
         <div class="projects-list">
             <div class="current-projects">
                 <h6>Current Projects</h6>
+                <hr>
                 <ul>
                     <li>Mpafitis Taxi</li>
                     <li>Paros Pages App</li>
@@ -20,6 +21,7 @@
             </div>
             <div class="future-projects">
                 <h6>Future Projects</h6>
+                <hr>
                 <ul>
                     <li>Delivery App</li>
                     <li>Reservation System</li>
@@ -28,23 +30,39 @@
             
         </div>
         <div class="project-panel">
-           <h3>Mpafitis Taxi</h3>
            <div class="project-info">
-               <span id="complete">INCOMPLETE</span>
-               <span id="recurring">ONE TIME</span>
-               <span id="paid">0$</span>
-               <span id="total">350$</span>
-               <span id="start_date">10-05-2019</span>
-               <span id="due">30-05-2019</span>
-               <div class="progress">20%</div>
+               <div class="progress-bar">
+                   <div id="percentage">0%</div>
+                   <div id="bar"></div>
+                </div>
+               <h3>Mpafitis Taxi</h3>
+               <div class="info">
+                <span id="recurring" style="background: #0ab50a;color: white;">onetime</span>
+                <span id="complete" style="background: #ffc864;color: white;">incomplete</span>
+                <span id="paid">paid: 0$</span>
+                <span id="total">total: 350$</span>
+                <span id="start_date">start-at: 10-05-2019</span>
+                <span id="due" style="background: #d8d809;color: white;">complete-by: 30-05-2019</span>
+               </div>
            </div>
 
            <div class="todos">
-            here goes the todos
+               <div class="todo">
+                <input type="checkbox" name="tt" id="1" value="1" />
+                <label for="1" class="strikethrough">Number 1</label>
+               </div>
+            <div class="todo">
+                <input type="checkbox" name="ss" id="2" value="1" />
+                <label for="2" class="strikethrough">Number 2</label>
+            </div>
            </div>
 
            <div class="notes">
-               notes...
+               <h5>Notes</h5>
+               <p>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sit facilis nam totam suscipit quam obcaecati illo aperiam neque. Nam necessitatibus laboriosam nulla nostrum architecto deserunt culpa! Deleniti, tenetur magni.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sit facilis nam totam suscipit quaeque. Nam necessitatibus laboriosam nulla nostrum architecto deserunt culpa! Deleniti, tenetur magni.
+              </p>
            </div>
           
         </div>
