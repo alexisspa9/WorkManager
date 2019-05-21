@@ -1,0 +1,23 @@
+{
+  "name": "workmanager",
+  "version": "1.0.0",
+  "description": "An Electron App that manages your Projects Schedule",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexisspa9/WorkManager.git"
+  },
+  "author": "Alexander Spanos <alexisspa9@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexisspa9/WorkManager/issues"
+  },
+  "homepage": "https://github.com/alexisspa9/WorkManager#readme",
+  "dependencies": {
+    "electron": "^5.0.1"
+  }
+}
