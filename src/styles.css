@@ -361,10 +361,6 @@ body {
     overflow: hidden;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 25% 75%;
-}
 span {
     display: inline-block;
     font-size: 0.7rem;
@@ -373,6 +369,66 @@ span {
     border-radius: 3px;
     border: 1px solid #e0dfdf;
     font-weight: bold;
+}
+
+h3 {
+    margin: 10px 0px;
+}
+h5 {
+    margin: 3px 0px;
+}
+h6 {
+    font-size: 0.8rem;
+    margin: 30px 0px 10px 0px;
+}
+hr {
+    border: none;
+    height: 1px;
+    background: #efeeee;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    font-size: 0.8rem;
+    padding: 2px 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+li.active::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #40f340;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+p {
+    background: white;
+    padding: 15px;
+    border: 1px solid whitesmoke;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
 }
 
 .progress-bar {
@@ -421,36 +477,15 @@ span {
     grid-row-start:2;
     overflow-y: scroll;
 }
-h3 {
-        margin: 10px 0px;
-}
-hr {
-    border: none;
-    height: 1px;
-    background: #efeeee;
-}
+
 .info {
     margin: 5px 0px;
 }
 .project-panel {
-    /* width: calc(100% - 200px); */
     grid-column-start:2;
     display: grid;
     grid-template-rows: 100px 1fr 150px;
     padding: 10px;
-}
-.projects-list ul {
-    list-style: none;
-    padding: 0;
-}
-h6 {
-font-size: 0.8rem;
-    margin: 30px 0px 10px 0px;
-}
-li {
-    font-size: 0.8rem;
-    padding: 2px 0px;
-    cursor: pointer;
 }
 
 .project-info {
@@ -467,26 +502,7 @@ li {
     grid-row-start: 3;
         overflow: scroll;
 }
-label {
-    cursor: pointer;
-}
-
-input[type=checkbox]:checked + label.strikethrough{
-  text-decoration: line-through;
-  opacity: 0.6;
-}
-.notes p {
-        background: white;
-    padding: 15px;
-    border: 1px solid whitesmoke;
-        font-size: 0.85rem;
-    letter-spacing: 0.5px;
-}
 
 .todo {
         padding: 1px 0px;
-}
-
-h5 {
-    margin: 3px 0px;
 }
