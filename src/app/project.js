@@ -65,6 +65,14 @@ const Project = (name, total = 0, recurring = false, _start_date = Moment().form
         notes = val;
     }
 
+
+    const set_start_date = (date) => {
+        start_date = date;
+    }
+    const set_due_date = (date) => {
+        due_date = date;
+    }
+
     return {
         show_values,
         edit_name,
@@ -74,7 +82,9 @@ const Project = (name, total = 0, recurring = false, _start_date = Moment().form
         set_notes,
         add_todo,
         delete_todo,
-        calculate_progress
+        calculate_progress,
+        set_start_date,
+        set_due_date
 
     }
 }

@@ -82,4 +82,16 @@ it('calculate_progress() returns project progress', () => {
 });
 
 
+test('set_start_date(date) changes start date', () => {
+    const newdate = Moment().add(1, 'days').format("MMM Do YY");
+    myproject.set_start_date(newdate);
+    expect(myproject.show_values().startDate).toEqual(newdate);
+});
+
+test('set_due_date(date) changes due date', () => {
+    const newdate = Moment().add(3, 'days').format("MMM Do YY");
+    myproject.set_due_date(newdate);
+    expect(myproject.show_values().dueDate).toEqual(newdate);
+});
+
 //has value recurring or one time
