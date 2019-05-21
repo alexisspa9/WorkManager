@@ -9,8 +9,13 @@ const Todo = (text) => {
     const toggle_complete = () => {
         complete = !complete;
     }
+
     const show_values = () => {
-        Object.assign(_text, complete);
+        const values = {
+            text: _text,
+            complete: complete
+        }
+        return values;
     }
     
     
